@@ -20,6 +20,8 @@ class LoginActivity : AppCompatActivity() {
 
             var userName = inputNum.text.toString()
             var userNum = inputId.text.toString()
+            var userId = inputId2.text.toString()
+
             val msgString = "${userNum}번 ${userName} 회원님 환영합니다."
 
             Toast.makeText(this, msgString, Toast.LENGTH_SHORT).show()
@@ -27,6 +29,7 @@ class LoginActivity : AppCompatActivity() {
             var myIntent = Intent(this, MainActivity::class.java)
             myIntent.putExtra("tagName", userName)
             myIntent.putExtra("tagNum", userNum)
+            myIntent.putExtra("tagId", userId)
             startActivity(myIntent)
         }
 
