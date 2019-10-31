@@ -25,6 +25,8 @@ class LoginActivity : AppCompatActivity() {
             Toast.makeText(this, msgString, Toast.LENGTH_SHORT).show()
 
             var myIntent = Intent(this, MainActivity::class.java)
+            myIntent.putExtra("tagName", userName)
+            myIntent.putExtra("tagNum", userNum)
             startActivity(myIntent)
         }
 
