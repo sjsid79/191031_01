@@ -14,6 +14,7 @@
         android:text="이름"/>
 
     <EditText
+        android:id="@+id/inputId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:singleLine="true"/>
@@ -25,6 +26,7 @@
         android:text="회원 번호"/>
 
     <EditText
+        android:id="@+id/inputNum"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"/>
@@ -40,6 +42,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/loginBtn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
